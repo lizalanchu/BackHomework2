@@ -78,7 +78,7 @@ class User{
     public function delete(): bool
     {
 
-        $query = "DELETE " . $this->table_name . " WHERE id = ?";
+        $query = "DELETE FROM " . $this->table_name . " WHERE id = ?";
 
         $stmt = $this->connect->prepare($query);
 
