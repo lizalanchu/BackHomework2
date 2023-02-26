@@ -12,7 +12,7 @@ include_once '../models/city.php';
 $database = new Database();
 $db = $database->getConnection();
 
-$city = new User($db);
+$city = new City($db);
 
 $city->id = $_POST['id'];
 $city->name = $_POST['name'];
